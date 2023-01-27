@@ -7,7 +7,7 @@
   left: -12.5%;
   top: calc(50% - 900px / 2 + 151px);
   opacity: 0.2;
-  background: linear-gradient(180deg, #77b8ff 0%, rgba(42, 138, 246, 0.4) 100%);
+  background: linear-gradient(180deg, #552c0698 0%, rgba(97, 42, 5, 0.651) 100%);
   filter: blur(125px);
   transform: rotate(-15deg);
   border-bottom-left-radius: 25% 25%;
@@ -30,8 +30,8 @@
   opacity: 0.5;
   background: linear-gradient(
     180deg,
-    rgba(29, 92, 162, 0.2) 0%,
-    rgba(42, 138, 246, 0.4) 100%
+    rgba(104, 67, 11, 0.664) 0%,
+    rgba(116, 57, 3, 0.4) 100%
   );
   filter: blur(125px);
   will-change: filter;
@@ -49,8 +49,8 @@
   top: calc(50% - 900px / 2 + 151px);
   background-image: linear-gradient(
     180deg,
-    rgba(236, 151, 207, 0.4) 0%,
-    rgba(233, 42, 103, 1) 100%
+    rgba(190, 117, 8, 0.37) 0%,
+    rgba(224, 159, 17, 0.548) 100%
   );
   filter: blur(125px);
   transform: rotate(15deg);
@@ -76,8 +76,8 @@
 
   background: linear-gradient(
     180deg,
-    rgba(236, 151, 207, 0.4) 0%,
-    rgba(233, 42, 103, 1) 100%
+    rgba(202, 141, 10, 0.774) 0%,
+    rgb(148, 111, 8) 100%
   );
   transform: matrix(-1, 0, 0, 1, 0, 0);
   filter: blur(125px);
@@ -88,12 +88,12 @@
 .counter-border {
   --border-radius: 12px;
   --border-size: 1px;
-  --padding: 1px;
+  --padding: 5px;
   --border-bg: conic-gradient(
     from 180deg at 50% 50%,
-    #e92a67 0deg,
-    #a853ba 112.5deg,
-    #2a8af6 228.75deg,
+    #571805 0deg,
+    #c99812 112.5deg,
+    #ecf000 228.75deg,
     rgba(42, 138, 246, 0) 360deg
   );
   position: relative;
@@ -164,7 +164,7 @@
   height: 404px;
   left: calc(50% - 387px / 2 - 80px);
   bottom: -32px;
-  background: linear-gradient(180deg, #58a5ff 0%, #a67af4 100%);
+  background: linear-gradient(180deg, #6d4006 0%, #9b470f 100%);
   mix-blend-mode: normal;
   opacity: 0.15;
   filter: blur(50px);
@@ -177,7 +177,7 @@
   height: 404px;
   left: calc(50% - 387px / 2 + 81px);
   bottom: -32px;
-  background: linear-gradient(180deg, #ff3358 0%, #ff4fd8 100%);
+  background: linear-gradient(180deg, #c7c404 0%, #917b01 100%);
   mix-blend-mode: normal;
   opacity: 0.15;
   filter: blur(50px);

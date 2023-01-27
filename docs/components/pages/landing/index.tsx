@@ -13,6 +13,7 @@ import { LandingPageGlobalStyles } from "../home-shared/GlobalStyles";
 import styles from "./index.module.css";
 import PackLogo from "../../logos/PackLogo";
 import RepoLogo from "../../logos/RepoLogo";
+import { Grid, Row } from '@nextui-org/react';
 
 function Background() {
   return (
@@ -60,7 +61,7 @@ function Card({
 }: {
   href: string;
   icon: React.ElementType;
-  title: "repo" | "pack";
+  title: "vault" | "safe" | "cowaii" | "gold" | "ghost" | "gaur2.0" | "max" | "arena" | "dex";
   alt?: string;
   className?: string;
   children: React.ReactNode;
@@ -84,7 +85,7 @@ function Card({
       ></motion.i>
       <div
         className={cn(
-          "relative w-full h-full max-w-full !pb-12 pt-8 md:!pb-4 md:!pt-4 p-3 rounded-xl overflow-hidden flex flex-col items-center justify-center border border-[rgba(255,255,255,0.05)]",
+          "relative w-full h-full max-w-full !pb-12 pt-8 md:!pb-4 md:!pt-4 p-3 rounded-xl overflow-hidden flex flex-col items-center justify-center border border-[rgba(228,50,219,0.05)]",
           className
         )}
       >
@@ -93,17 +94,7 @@ function Card({
         </div>
 
         <div className="flex flex-col items-center flex-1">
-          {title == "pack" ? (
-            <PackLogo
-              alt={alt}
-              className="w-[160px] md:w-[220px] mb-3 fill-black dark:fill-white"
-            />
-          ) : (
-            <RepoLogo
-              alt={alt}
-              className="w-[160px] md:w-[220px] mb-3 fill-black dark:fill-white"
-            />
-          )}
+        
           {children}
         </div>
       </div>
@@ -112,39 +103,158 @@ function Card({
 }
 
 function SiteCards() {
+  
   return (
-    <div className="flex w-full container items-center justify-center gap-6 px-6 sm:mx-0 mt-8 md:!mt-14 lg:!mt-15 md:mb-0 flex-col lg:!flex-row z-10 lg:!translate-y-0">
+    
+       <Grid.Container gap={3} justify="center" css={{marginTop: "40px"}}>
+        <Grid> 
       <FadeIn delay={0.1}>
         <Card
-          title="repo"
+          title="vault"
           alt="Turborepo"
           icon={Turborepo}
-          href="/repo"
+          href="/vaults"
           className="turborepoCardBg"
         >
-          <p className="text-lg !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-70">
-            High-performance build system for JavaScript and TypeScript
-            codebases.
+          <p className="text-xxl !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-70">
+            Gaur Vault  
           </p>
         </Card>
       </FadeIn>
+      </Grid><Grid> 
       <FadeIn delay={0.2}>
         <Card
-          title="pack"
+          title="safe"
           alt="Turbopack"
           icon={Turbopack}
-          href="/pack"
+          href="/diamond"
+          className="turbopackCardBg"
+        >
+        
+          <p className="text-xxl !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-70 ">
+            Diamond Safes
+          </p>
+        </Card>
+      </FadeIn>
+      </Grid> <Grid> 
+      <FadeIn delay={0.2}>
+        <Card
+          title="cowaii"
+          alt="Turbopack"
+          icon={Turbopack}
+          href="/soon"
+          className="turbopackCardBg"
+        >
+          <div className="absolute top-3 left-3">
+            <CardBadge>mint now</CardBadge>
+          </div>
+          <p className="text-xxl !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-70 ">
+            Cowaii NFTs
+          </p>
+        </Card>
+      </FadeIn>
+      </Grid> <Grid> 
+      <FadeIn delay={0.2}>
+        <Card
+          title="gold"
+          alt="Turbopack"
+          icon={Turbopack}
+          href="/soon"
+          className="turbopackCardBg"
+        >
+          <div className="absolute top-3 left-3">
+            <CardBadge>mint now</CardBadge>
+          </div>
+          <p className="text-xxl !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-70 ">
+            Gaur Golden Coins
+          </p>
+        </Card>
+      </FadeIn>
+      </Grid> <Grid> 
+      <FadeIn delay={0.2}>
+        <Card
+          title="ghost"
+          alt="Turbopack"
+          icon={Turbopack}
+          href="/soon"
+          className="turbopackCardBg"
+        >
+        
+          <p className="text-xxl !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-70 ">
+            Ghost Staking NFT utility
+          </p>
+        </Card>
+      </FadeIn>
+      </Grid> <Grid> 
+      <FadeIn delay={0.2}>
+        <Card
+          title="gaur2.0"
+          alt="Turbopack"
+          icon={Turbopack}
+          href="/soon"
+          className="turbopackCardBg"
+        >
+          <div className="absolute top-3 left-3">
+            <CardBadge>pre production</CardBadge>
+          </div>
+          <p className="text-xxl  !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-30 ">
+            Gaur 2.0
+          </p>
+        </Card>
+      </FadeIn></Grid>
+      <Grid> 
+      <FadeIn delay={0.2}>
+        <Card
+          title="max"
+          alt="Turbopack"
+          icon={Turbopack}
+          href="/soon"
           className="turbopackCardBg"
         >
           <div className="absolute top-3 left-3">
             <CardBadge>alpha</CardBadge>
           </div>
-          <p className="text-lg !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-70 ">
-            Introducing the Rust-powered successor to Webpack.
+          <p className="text-xxl !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-30 ">
+            GaurMoney Max
           </p>
         </Card>
-      </FadeIn>
-    </div>
+      </FadeIn></Grid>
+      <Grid> 
+      <FadeIn delay={0.2}>
+        <Card
+          title="arena"
+          alt="Turbopack"
+          icon={Turbopack}
+          href="/soon"
+          className="turbopackCardBg"
+        >
+          <div className="absolute top-3 left-3">
+            <CardBadge>pre alpha</CardBadge>
+          </div>
+          <p className="text-xxl !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-30 ">
+           Gaur Arena
+          </p>
+        </Card>
+      </FadeIn></Grid>
+      <Grid> 
+      <FadeIn delay={0.2}>
+        <Card
+          title="dex"
+          alt="Turbopack"
+          icon={Turbopack}
+          href="/soon"
+          className="turbopackCardBg"
+        >
+          <div className="absolute top-3 left-3">
+            <CardBadge>alpha</CardBadge>
+          </div>
+          <p className="text-xxl !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-70 dark:opacity-30 ">
+            Gaur Dex 
+          </p>
+        </Card>
+      </FadeIn></Grid>
+      </Grid.Container>
+
   );
 }
 
@@ -180,16 +290,15 @@ function LandingPage() {
         <Background />
         <FadeIn className="z-10 flex flex-col items-center justify-center w-full h-full">
           <h1 className="mt-12 lg:!mt-20 mx-6 w-[300px] md:!w-full font-extrabold text-5xl lg:text-6xl leading-tight text-center mb-4 bg-clip-text text-transparent bg-gradient-to-b from-black/80 to-black dark:from-white dark:to-[#AAAAAA]">
-            Make Ship Happen
+            Gaur Money Ecosystem
           </h1>
           <p className="mx-6 text-xl max-h-[112px] md:max-h-[96px] w-[315px] md:w-[660px] md:text-2xl font-space-grotesk text-center text-[#666666] dark:text-[#888888]">
-            Turbo is an incremental bundler and build system optimized for
-            JavaScript and TypeScript, written in Rust.
+          
           </p>
         </FadeIn>
         <SiteCards />
         <FadeIn delay={0.3} className="z-10 py-16">
-          <Teams />
+         
         </FadeIn>
       </main>
     </>
@@ -197,3 +306,4 @@ function LandingPage() {
 }
 
 export default LandingPage;
+

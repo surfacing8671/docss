@@ -11,10 +11,10 @@ export default function Home() {
       <main className="relative">
         <RepoHero />
         <GradientSectionBorder>
-          <RepoFeatures />
+         
         </GradientSectionBorder>
         <GradientSectionBorder>
-          <RepoLetter />
+          
         </GradientSectionBorder>
       </main>
     </>

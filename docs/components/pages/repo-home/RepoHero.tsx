@@ -18,20 +18,7 @@ export function RepoHero() {
         <FadeIn className="z-50 flex items-center justify-center w-full ">
           <div className="absolute min-w-[614px] min-h-[614px]">
             {/* TODO: On dark mode, there should be a "breathing" gradient inside the inner circle */}
-            <Image
-              alt="Turborepo"
-              src="/images/docs/repo/repo-hero-circles-dark.svg"
-              width={614}
-              height={614}
-              className="hidden dark:block"
-            />
-            <Image
-              alt="Turborepo"
-              src="/images/docs/repo/repo-hero-circles-light.svg"
-              width={614}
-              height={614}
-              className="block dark:hidden"
-            />
+           
           </div>
           <div className="absolute z-50 flex items-center justify-center w-64 h-64">
             <Gradient
@@ -44,20 +31,7 @@ export function RepoHero() {
           </div>
 
           <div className="w-[120px] h-[120px] z-50">
-            <Image
-              alt=""
-              src={`/images/docs/repo/repo-hero-logo-dark.svg`}
-              width={120}
-              height={120}
-              className="hidden dark:block"
-            />
-            <Image
-              alt=""
-              src={`/images/docs/repo/repo-hero-logo-light.svg`}
-              width={120}
-              height={120}
-              className="block dark:hidden"
-            />
+          
           </div>
         </FadeIn>
         <Gradient
@@ -71,15 +45,10 @@ export function RepoHero() {
           delay={0.15}
           className="z-50 flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6"
         >
-          <RepoLogo
-            alt="Turborepo"
-            width="200"
-            className="w-[160px] md:w-[200px] fill-black dark:fill-white"
-          />
-          <HeroText h1>The build system that makes ship happen</HeroText>
+         
+          <HeroText h1>Diamond Safe</HeroText>
           <SectionSubtext hero>
-            Turborepo is a high-performance build system for JavaScript and
-            TypeScript codebases.
+            Are you strong enough to make Diamonds?
           </SectionSubtext>
         </FadeIn>
         <FadeIn
@@ -88,22 +57,13 @@ export function RepoHero() {
         >
           <div className="flex flex-col w-full gap-3 md:!flex-row">
             <CTAButton>
-              <Link href="/repo/docs" className="block py-3">
-                Get Started
+              <Link href="/diamond/docs" className="block py-3">
+                Store Your Assets
               </Link>
             </CTAButton>
-            <CTAButton outline>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/vercel/turbo"
-                className="block py-3"
-              >
-                GitHub
-              </a>
-            </CTAButton>
+        
           </div>
-          <p className="text-sm text-[#666666]">License: MPL-2.0</p>
+         
         </FadeIn>
         <FadeIn delay={0.5} className="relative w-full">
           <div className="absolute bottom-0 w-full dark:from-black from-white to-transparent h-72 bg-gradient-to-t" />

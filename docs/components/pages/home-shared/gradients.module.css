@@ -1,6 +1,6 @@
 .benchmarkTurbo {
-  background: linear-gradient(288.43deg, #ff1e56 28.29%, #9c51a1 78.78%);
-  box-shadow: 0px 0px 16px #f02662;
+  background: linear-gradient(288.43deg, #d6c209 28.29%, #ce750f 78.78%);
+  box-shadow: 0px 0px 16px #ecd60b;
   :global(.light) & {
     background: linear-gradient(
       268.86deg,
@@ -49,7 +49,7 @@
 }
 
 .benchmarkTurboLabel {
-  background: linear-gradient(288.43deg, #ff1e56 28.29%, #9c51a1 78.78%);
+  background: linear-gradient(288.43deg, #ddda12 28.29%, #e6b224 78.78%);
   color: transparent;
   background-clip: text;
   :global(.light) & {
@@ -89,7 +89,7 @@
   }
 }
 .translatingGlow {
-  background: linear-gradient(32deg, #2a8af6 0%, #a853ba 50%, #e92a67 100%);
+  background: linear-gradient(32deg, #683e06 0%, #d88b16 50%, #e0c009 100%);
   background-size: 200% 200%;
   animation: translateGlow 7s linear infinite;
   will-change: filter;
@@ -173,19 +173,19 @@
 }
 
 .glowBlue {
-  background: linear-gradient(180deg, #58a5ff 0%, #a67af4 100%);
+  background: linear-gradient(180deg, #7c4404 0%, #c55409 100%);
 }
 
 .glowPink {
-  background: linear-gradient(180deg, #ff3358 0%, #ff4fd8 100%);
+  background: linear-gradient(180deg, #f5ca0a 0%, #929002 100%);
 }
 
 .glowConic {
   background: conic-gradient(
     from 180deg at 50% 50%,
-    #2a8af6 0deg,
-    #a853ba 180deg,
-    #e92a67 360deg
+    #fc7e09 0deg,
+    #977503 180deg,
+    #eef10a 360deg
   );
 }
 
@@ -220,12 +220,12 @@
   height: var(--height);
   right: var(--gradient-x-offset);
   top: var(--gradient-y-offset);
-  background: linear-gradient(180deg, #ff3358 0%, #ff4fd8 100%);
+  background: linear-gradient(180deg, #ebc20f 0%, #dac407 100%);
   border-radius: 100%;
   mix-blend-mode: normal;
   filter: blur(50px);
 }
 
 .gradientSectionBorderDivider {
-  background: linear-gradient(90deg, #288cf9 0%, #e32c6b 100%);
+  background: linear-gradient(90deg, #642e02 0%, #f8e804 100%);
 }
